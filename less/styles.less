@@ -1,0 +1,337 @@
+// Tags
+@bg: #E3E0DC;
+
+@bgbtn: #BE4A31;
+
+// settings
+.html{
+	font-size: 10px;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+
+
+// Первая страница
+
+.main{
+		font-family: 'Rubik', sans-serif;
+		    // overflow: hidden;
+    // z-index: -100;
+    min-height: 100vh;
+    width: 100%;
+    display: table;
+
+
+}
+.nav-main{
+	background: rgba(0,0,0,0.7);
+	z-index: 5;
+}
+.main-text{
+}
+.main-text-1{
+	margin-left: 3rem;
+}
+.overlay {
+	// text-align: center;
+    background: rgba(0,0,0,0.4);
+    min-height: 100vh;
+ //    display: table-cell;
+ //    vertical-align: middle;
+ //    position: absolute;
+ //    top:0;
+ //    left:0;
+ //    width: 100%;
+ //    height: 100%;
+    z-index: 4;
+ //    display: block;
+     // padding: 2rem;
+
+    }
+    .logo{
+    	margin-top: 7rem;
+    	mix-blend-mode: overlay;
+    }
+    .overlay p{
+    	margin-top: 3rem;
+    	color: #fff;
+    	font-weight: 400;
+    	font-size: 3rem;
+    }
+    .overlay span {
+    	font-weight: 300;
+    	font-size: 1.5rem;
+    }
+    .strelka{
+    	margin-top: 2rem;
+    	bottom: 0;
+    }
+
+
+ // forus
+ .forus{
+ 	font-family: 'Rubik', sans-serif;
+ 	padding: 3rem;
+ 	background: @bg;
+ }
+ .header-text p{
+ 	margin-left: 3rem;
+margin-top: 5rem;
+font-size: 2.5rem;
+font-weight: 600;
+ }
+.forus-card {
+	margin-top: 2rem;
+}
+.spotfly{
+	background: url(../img/spotfly.png) no-repeat center;
+	background-attachment: fixed;
+}
+.spotfly-bg{
+	background: rgba(200,200,200,0.3);
+	padding: 2rem;
+}
+.foto-header {
+	padding: 1rem;
+	display: inline-block;
+	width: 100%;
+	background: #fff;
+	img{
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	p{
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-bottom: 0;
+
+
+	}
+	a{
+		font-size: 1rem;
+
+	}
+}
+.accordion{
+	width: 85%;
+	margin-bottom: 3rem;
+}
+.goocart{
+margin-top: 8rem;
+}
+.foto img{
+width: 50rem;
+}
+.tabfly{
+	background: url(../img/zapisat2.jpg) no-repeat center;
+	color: #fff;
+	font-family: 'Rubik', sans-serif;
+	.btn-tabfly{	
+		display: inline-block;
+		padding: 1rem;
+		margin-top: 3rem;
+		border-radius: 0.8rem;
+		font-size: 1rem;
+	}
+
+}
+.bgd{
+	background: rgba(0,0,0,0.4);
+	padding: 2rem;
+}
+
+// Вопросы/ответы
+.Question{
+	font-family: 'Rubik', sans-serif;
+	background: @bg;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.formq{
+	margin-top: 3rem;
+}
+
+ // Icons
+ .icon{
+ 	background: @bg;
+font-family: 'Rubik', sans-serif;
+padding: 1rem;
+ }
+.icon-border{
+	// border: medium solid @bgbtn;
+	// border-radius: 1rem;
+	padding: 2rem;
+	p{
+		font-size: 1rem;
+		margin-bottom: 0;
+		font-weight: 300;
+		// text-decoration: underline;
+		// text-decoration-color: @bgbtn;
+		// border-bottom: solid 3px @bgbtn;
+	}
+	span{
+		font-size: 1.5rem;
+		font-weight: 400;
+		display: inline-block;
+		margin-top: 1rem;
+        border-bottom: solid 3px @bgbtn;    		
+	}
+	img{
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+// Контакты
+.contacts{
+  font-family: 'Rubik', sans-serif;
+  background: #545454;
+  p{
+  	margin-bottom: 1rem;
+  	font-size: 1rem;
+  	font-weight: 300;
+  }
+  img{
+  	margin-bottom: 1rem;
+  	width: 2rem;
+  	height: 2rem;
+  }
+  .logocont {
+		width: 18rem;
+		height: 16rem;
+	}
+}
+.fhone{
+        border-bottom: solid 3px #fff;    		
+}
+
+
+
+
+
+// Media
+@media (max-width: 991px){
+.goocart{
+	display: none;
+}
+.contacts{
+	img{
+		width: 2rem;
+		height: 2rem;
+	}
+	p{
+		font-size: 1.5rem;
+		text-height: auto;
+	}
+	.logocont{
+		width: 100%;
+		height: 100%;
+	}
+}
+}
+
+@media (max-width: 600px){
+.logo{
+    	margin-top: 7rem;
+}
+.logo img{
+	width: 80%;
+	height: 80%;
+}
+.overlay p{
+    	margin-top: 8rem;
+    	color: #fff;
+    	font-weight: 400;
+    	font-size: 2rem;
+
+    }
+    .strelka{
+    	margin-top: 4.5rem;
+    }
+.header-text p{
+ 	margin-left: 0rem;
+margin-top: 5rem;
+font-size: 1.2rem;
+font-weight: 600;
+}
+.forus-card {
+	img{
+		display: none;
+		object-fit:cover;
+	}
+}
+.accordion{
+	width: 100%;
+	margin-bottom: 2rem;
+}
+.goocart{
+margin-bottom: 1rem;
+margin-top: 1rem;
+text-align: center;
+}
+.icon-border{
+	padding: 0;
+	p{
+		font-size: 1rem;
+	}
+	span{
+		font-size: 1.4rem;
+		margin-top: 0.5rem;
+	}
+	img{
+		width: 4rem;
+		height: 4rem;
+	}
+}
+.contacts{
+	img{
+		width: 1.3rem;
+		height: 1.3rem;
+	}
+	p{
+		font-size: 0.8rem;
+		text-height: auto;
+	}
+	.logocont{
+		width: 100%;
+		height: 100%;
+	}
+}
+}
+// псевдоклассы
+A:link { 
+    color: #fff; /* Цвет непосещенных ссылок */
+    text-decoration: none;
+   }
+   A:visited { 
+    color: #fff; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+   A:hover { 
+    color: #fff; /* Цвет ссылок при наведении на них курсора мыши */
+    text-decoration: none;
+   }
+   A:active { 
+    color: #fff; /* Цвет активных ссылок */
+    text-decoration: none;
+   }
+   A.cart:link { 
+    color: black; /* Цвет непосещенных ссылок */
+    text-decoration: none;
+   }
+   A.cart:visited { 
+    color: black; /* Цвет посещенных ссылок */
+    text-decoration: none;
+   }
+   A.card:hover { 
+    color: black; /* Цвет ссылок при наведении на них курсора мыши */
+    text-decoration: none;
+   }
+   A.card:active { 
+    color: black; /* Цвет активных ссылок */
+    text-decoration: none;
+   }
